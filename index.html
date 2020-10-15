@@ -396,7 +396,7 @@
     <footer class="footer">
       <div class="container">
         <div class="left-side">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="logo footer-logo"
             >Web<span class="studio-footer">Studio</span></a
           >
           <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
@@ -444,11 +444,69 @@
             </li>
           </ul>
         </div>
+        <div class="footer-sign-input">
+          <h3 class="footer-social-list-titule">Подпишитесь на рассылку</h3>
+          <form action="#">
+            <div class="footet-input-position-box">
+              <input
+                class="footet-input"
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+              />
+
+              <button class="footer-sign-button" type="submit">
+                <span>Подписаться</span>
+                <svg class="footer-sign-button-icon">
+                  <use href="./images/icon/sprite.svg#telegram-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-modal" type="button" data-modal-close></button>
+        <h2 class="modal-titule">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="#" class="form">
+          <div class="form-input-wrap">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" placeholder=" " />
+          </div>
+          <div class="form-input-wrap">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder=" " />
+          </div>
+          <div class="form-input-wrap">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="coment-input-wrap">
+            <label for="coment">Комментарий</label>
+            <textarea
+              class="coment-textarea"
+              name="coment"
+              id="coment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="privat-policy-wrap">
+            <input type="checkbox" name="policy" id="policy" />
+            <label class="privat-policy-checkbox" for="policy" name="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="privat-policy-link" href="#">Условия договора</a></label
+            >
+          </div>
+          <div class="send-button-wrap">
+            <button class="button-send-form" type="submit">Отправить</button>
+          </div>
+        </form>
+        <button class="close-modal-button" type="button" data-modal-close>
+          <svg class="close-modal-icon">
+            <use href="./images/icon/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
