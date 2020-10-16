@@ -545,6 +545,7 @@ body {
   border-radius: 4px;
   background-color: #2f303a;
   padding-left: 16px;
+  resize: none;
 }
 .footet-input input::placeholder {
   display: flex;
@@ -555,7 +556,9 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
+.footet-input:not(:placeholder-shown) {
+  color: var(--white-text-color);
+}
 .footer-sign-button {
   display: flex;
   align-items: center;
@@ -830,13 +833,18 @@ body {
 }
 
 .projects-button {
-  width: 128px;
   height: 38px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
   background: #f5f4fa;
   border: 0px;
   border-radius: 4px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
   color: var(--titule-text-color);
   background-color: var(--button-bg-color);
 }
