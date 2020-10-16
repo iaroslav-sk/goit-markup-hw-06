@@ -472,15 +472,42 @@
         <form action="#" class="form">
           <div class="form-input-wrap">
             <label for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder=" " />
+            <div class="name-icon-wrap">
+              <input
+                class="name-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=" "
+              />
+              <svg class="name-icon">
+                <use href="./images/icon/sprite.svg#name-icon"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-input-wrap">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" placeholder=" " />
+            <div class="phone-icon-wrap">
+              <input
+                class="tel-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder=" "
+              />
+              <svg class="phone-icon">
+                <use href="./images/icon/sprite.svg#phone-icon"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-input-wrap">
             <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail" />
+            <div class="mail-icon-wrap">
+              <input class="mail-inpup" type="email" name="mail" id="mail" />
+              <svg class="mail-icon">
+                <use href="./images/icon/sprite.svg#mail-icon"></use>
+              </svg>
+            </div>
           </div>
           <div class="coment-input-wrap">
             <label for="coment">Комментарий</label>
@@ -492,8 +519,14 @@
             ></textarea>
           </div>
           <div class="privat-policy-wrap">
-            <input type="checkbox" name="policy" id="policy" />
-            <label class="privat-policy-checkbox" for="policy" name="policy"
+            <input
+              class="privat-policy-checkbox visually-hidden"
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="accept-policy"
+            />
+            <label class="privat-policy-input" for="policy" name="policy"
               >Соглашаюсь с рассылкой и принимаю
               <a class="privat-policy-link" href="#">Условия договора</a></label
             >

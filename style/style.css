@@ -669,7 +669,10 @@ body {
 }
 .form-input-wrap input {
   margin: 0 0;
-  padding: 6px 10px;
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  padding-left: 42px;
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -733,11 +736,82 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
 }
-/* .send-button-wrap {
-  display: flex;
-  text-align: center;
-} */
+.name-icon-wrap,
+.phone-icon-wrap,
+.mail-icon-wrap {
+  position: relative;
+  width: 30px;
+}
+.name-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+}
+.phone-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+}
+.mail-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 12px;
+}
+.mail-icon-wrap:focus-within,
+.phone-icon-wrap:focus-within,
+.name-icon-wrap:focus-within {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.mail-inpup:focus,
+.tel-input:focus,
+.name-input:focus,
+.coment-textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
 
+.coment-textarea::placeholder {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.privat-policy-input {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.privat-policy-input::before {
+  content: " ";
+  display: inline-block;
+  text-align: left;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  background-image: url("../images/icon/checkbox-empty-icon.svg");
+}
+.privat-policy-checkbox:checked + .privat-policy-input::before {
+  background-image: url("../images/icon/checkbox-selector-icon.svg");
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+}
 /* ---------------------------------------- */
 /* -------------portfolio ------------------*/
 /* ---------------------------------------- */
